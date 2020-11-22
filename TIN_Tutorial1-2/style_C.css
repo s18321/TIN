@@ -1,0 +1,32 @@
+
+body {
+  background-color: powderblue;
+}
+alink {
+  text-decoration: none ;
+}
+h1 {
+  color: blue;
+  font-size: 20px;
+  font-style: oblique;
+ 
+}
+p {
+  color: red;
+   font-size: 20px;
+  font-style: oblique;
+}
+p1 {
+  color: green;
+   font-size: 35px;
+  font-style: italic;
+}
+table {
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 5px solid red;
+}
+ul{
+  list-style-type: square;
+}

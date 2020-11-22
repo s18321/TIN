@@ -1,0 +1,49 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: red;
+}
+
+.header h1 {
+  font-size: 30px;
+  margin-left:15px;
+  background-image: url("http://themes.typepad.com/images/aloha2.jpg");
+  padding:50px;
+    margin: auto;
+  width: 75%;
+   color: blue;
+  border: 4px solid black;
+}
+  h2 {
+  font-size: 15px;
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+.column {
+  margin: auto;
+  width: 75%;
+  background-color: grey;
+  padding: 20px;
+  margin-top: 20px;
+  
+} 
+  .textbox {
+    border: 1px solid black;
+    background-color: lightblue;
+    text-align: justify;
+    text-justify: inter-word;
+    padding:20px;
+    margin-left: 20px;
+  }
+    /* Change color on hover */
+.column a:hover {
+  background-color: #ddd;
+  color: black;
+}

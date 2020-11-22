@@ -1,0 +1,94 @@
+
+figure {
+  border: 1px #cccccc ;
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: green;
+  color: white;
+  padding: 2px;
+  text-align: center;
+  font-family: "Muli";
+}
+body {
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+   font-family: "Sofia";
+}
+/* GridBox specification */
+.grid-box {
+  display:grid;
+  background-color: DodgerBlue;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-template-row:auto;
+  row-gap: 5px;
+}
+
+article{
+  font-family: "Muli";
+  margin: 10px;
+  padding:10px;
+  font-size: 15px;
+  float: left;
+}
+.imageInside {
+  
+  padding: 5px;
+  float: left;
+   max-width: 100px;
+}
+.imageHeader{
+  background-color: #aaa;
+  width: 30%;
+  max-width: 200px;
+  border-radius: 25px;
+  padding: 2px;
+  transform: rotate(15deg);
+  box-shadow: 10px 10px;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* pulled quotes */
+.quote {
+font-family: "Sofia";
+  float: right;
+  width: 90px;
+  border: 1px solid green;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+  article, .grid-box, .galleryColumn{   
+    width: 90%;
+    padding: 0;
+    max-width: 800px;
+    grid-column:1/-1;
+    row-gap: 0px;
+  }
+ 
+ 
+}

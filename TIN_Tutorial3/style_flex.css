@@ -1,0 +1,104 @@
+figure {
+  border: 1px #cccccc ;
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: green;
+  color: white;
+  font-family: "Muli";
+  padding: 2px;
+  text-align: center;
+}
+body {
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header*/
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+   font-family: "Sofia";
+}
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+}
+
+
+/* gallery */
+.galleryColumn {   
+  float: left;
+  width: 25%;
+  
+}
+
+/* article */
+article {
+
+  margin: 10px;
+  padding:10px;
+  float: left;
+  width: 20%;
+  max-width: 150px;
+  font-size: 15px;
+  background-color: #f1f1f1;
+  font-family: "Muli";
+}
+
+.imageInside {
+  padding: 5px;
+  float: left;
+}
+.imageHeader{
+  background-color: #aaa;
+  width: 30%;
+  max-width: 200px;
+  border-radius: 25px;
+  padding: 2px;
+  transform: rotate(15deg);
+  box-shadow: 10px 10px;
+}
+
+.flex-box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+.quote {
+font-family: "Sofia";
+  float: right;
+  width: 60px;
+  border: 1px solid green;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .galleryColumn, article, .flex-box{   
+    width: 90%;
+    padding: 0;
+    flex-flow: column-reverse wrap;
+    max-width: 800px;
+  }
+ 
+}

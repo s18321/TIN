@@ -1,0 +1,29 @@
+body {
+  background-color: LightGray;
+}
+h1 {
+  color: blue;
+ 
+}
+.image1 {
+            float: left;  
+            margin: 5px;
+        }
+.image2 {
+            float: right;  
+            margin: 5px;
+        }
+.image3 { 
+          float: right; 
+         margin: 5px;
+        }
+        
+.column {
+  float: left;
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
