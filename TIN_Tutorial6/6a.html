@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="InputForm" action="">
+  NumberToConvert: <input type="number" name="toConvert" value=""><br><br>
+   <label for="wayOfConvertion">Choose which way to convert:</label>
+<select id="wayOfConversion" name="wayOfConversion">
+  <option value=0>Celsius to Fahrenheit</option>
+  <option value=1>Fahrenheit to Celsius</option>
+</select> <br>
+  <label for="convert">Output:</label>
+  <output id="temp" name="x" for="convert"></output><br>
+</form> 
+<p>Click "Convert" to display the converted value.</p>
+
+<button onclick="convert()">Convert</button>
+<p id="converted"></p>
+
+<script src="./6a.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6c</title>
+</head>
+<body>
+<p>Upon clicking 'submit' validated inputs will turn green and errors will turn red and have a line trough them.</p>
+
+    <form id="inputForm">
+      <div>
+        <label for="postalCode">Input your postal code. It should be in fromat XX-XXX e.g.:01-345</label>
+        <input id="postalCode">
+    </div>
+    <div>
+        <label for="fullName">Enter your full name. Should be 2 words starting with capital letters.</label>
+        <input id="fullName"> 
+    </div>
+    <div>
+        <label for="orderNumber">Enter your order number. Should be number consisting of 6 digits.</label>
+        <input id="orderNumber" required> 
+    </div>
+    <div>
+        <div>
+            <button id="button-submit">Submit</button>
+        </div>
+    </form>
+
+    <script src="./6c.js"></script>
+
+</body>
+</html>
