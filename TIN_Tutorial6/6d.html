@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="6d.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TIN_6d_s18321</title>
+</head>
+
+<body style="background-color: rgb(76, 172, 151)">
+    <p>Upon clicking 'submit' validated inputs will turn green and errors will turn red and have a line trough them.</p>
+
+    <form id="inputForm">
+      <div>
+        <label for="postalCode">Input your postal code. It should be in fromat XX-XXX e.g.:01-345</label>
+        <input id="postalCode">
+    </div>
+    <div>
+        <label for="fullName">Enter your full name. Should be 2 words starting with capital letters.</label>
+        <input id="fullName"> 
+    </div>
+    <div>
+        <label for="orderNumber">Enter your order number. Should be number consisting of 6 digits.</label>
+        <input id="orderNumber" required> 
+    </div>
+    <div>
+        <div>
+            <!--<button id="button-submit">Submit</button>-->
+            <input type="button" value="Add row." id="buttonclick" onclick="addRowOnClick()">
+        </div>
+    </form>
+    <table id="Your data">
+        <tr>
+            <th>orderNumber:</th>
+            <th>fullName:</th>
+        </tr>
+        <tbody id=rows>
+            <tr>
+                <td>123456</td>
+                <td>John Brown</td>
+            </tr>
+            <tr>
+                <td>324555</td>
+                <td>Joe Doe</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+    <script src="./6d.js"></script>
+</body>
+</html>
