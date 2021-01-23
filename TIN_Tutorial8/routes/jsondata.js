@@ -8,18 +8,18 @@ module.exports = router;
 router.post('/', function(req, res){
     json=req.body;
     res.render('jsondata', {
-      title: "Data obtained from json.",
+      title: "Review your data.",
       firstName:  req.body.firstName,
       lastName: req.body.lastName,
       phoneNumber: req.body.phoneNumber
   });
-  console.log('Received POST data using JSON!');
+  console.log('Recived POST request with json data in /jsondata.');
   });
   
   router.get('/', function (req, res) {
   if(json!=undefined){
     res.render('jsondata', {
-        title: "Data obtained from json.",
+        title: "Review your data.",
         firstName: json.firstName,
         lastName: json.lastName,
         phoneNumber: json.phoneNumber
@@ -32,5 +32,6 @@ router.post('/', function(req, res){
         phoneNumber: 'undefined'
       });
   }
+  console.log('Recived GET request in /jsondata.');
   });
 module.exports = router;

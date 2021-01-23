@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form id="displayForm">
+      <label for="operation">Operation:</label>
+      <select id="operation">
+        <option id="addition">addition</option>
+        <option id="substraction">substraction</option>
+        <option id="multiplication">multiplication</option>
+        <option id="division">division</option>
+        <option id="exponentiation">exponentiation</option>
+      </select><br>
+      <label for="firstParameter">First Number =</label>
+      <input type="number" id="firstParameter" value="5"><br>
+      <label for="secondParameter">Second Number =</label>
+      <input type="number" id="secondParameter" value="5"><br>
+      <button type="button" id="button" value="Calculate">Calculate</button><br><br>
+      <!-- <label for="result" id ="resultDisplay">Result =</label>
+      <input type="number" id="result"><br> -->
+      <p id="resultDisplay"></p>
+    </form>
+    
+    
+
+    <script>
+      document.getElementById('button').addEventListener('click', (event) => {
+        let xhtRequest = new XMLHttpRequest();
+        xhtRequest.open("POST", "http://localhost:8080/calculator");
+        xhtRequest.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+        xhtRequest.send(JSON.stringify({
+          firstParameter: document.getElementById('firstParameter').value,
+          secondParameter: document.getElementById('secondParameter').value,
+          operation: document.getElementById('operation').value
+        }));
+        xhtRequest.onreadystatechange = function() {
+          if (xhtRequest.readyState == 4 && xhtRequest.status == 200) {
+            document.getElementById("resultDisplay").innerHTML = "Result: "+ JSON.parse(xhtRequest.response).operationResult;
+           //           var newItem = document.createElement("INPUT");
+           // var textnode = document.createTextNode(JSON.parse(xhtRequest.response).operationResult);
+           // newItem.appendChild(textnode);
+           // var list = document.getElementById("resultDisplay");
+           // list.insertAfter(newItem, list.childNodes[0]);
+          }
+        }
+        
+      });
+    </script>
+  </body>
+</html>

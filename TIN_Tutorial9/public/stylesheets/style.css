@@ -1,0 +1,19 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(113, 165, 82);
+}
+#displayForm {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: lightblue;
+  text-align: center;
+  text-justify: inter-word;
+  padding:20px;
+  margin-left: 20px;
+}
+#resultDisplay {
+  font-size: 30px;
+   font-family: "Sofia";
+}
+
